@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 100vw;
+    background: #121f3d;
+    color: hsl(215deg 13% 89%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar{
+    padding: 15px 0;
+    background: hsl(215deg 13% 89%);
+}
+.navbar .head-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #121f3d;
+    font-size: 3.5vmin;
+    font-weight: 600;
+    margin-left: 60px;
+    list-style: none;
+}
+ 
+.navbar .menu{
+    margin-right: 50px;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.navbar .menu li a{
+    display: block;
+    color: #121f3d;
+    font-size: 2vmin;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(18, 29, 110);
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+.layout  {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+.Example {
+    display: flex;
+    align-items: center;
+    padding: 5rem 2rem;
+    flex-direction: column;
+    text-align: center;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.APIcards{
+    inline-size: 100%;
+    
+}
+ .cards{
+ 
+    display: inline-flex;
+   flex-direction:column;
+   padding: 10px 10px;
+   
+
+}
+.cards img{
+    max-width: 100%;
+    width: 200px;
+    cursor: pointer;
+}
+.cards img:focus{
+    width: 220px;
+}
